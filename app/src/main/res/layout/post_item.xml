@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Account Profile Image -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Account Person Name -->
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/profile_image"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/profile_image"
+        android:text="Mohamed"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Post Date -->
+    <TextView
+        android:id="@+id/post_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/person_name"
+        android:layout_toEndOf="@id/profile_image"
+        android:text="March 23, 2024"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Post Description -->
+    <TextView
+        android:id="@+id/post_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_marginTop="16dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet facilisis purus. Nam tempor eros vel eros ullamcorper tristique."
+        android:textSize="16sp"/>
+</RelativeLayout>
